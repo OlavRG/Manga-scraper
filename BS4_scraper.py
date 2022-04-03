@@ -69,7 +69,6 @@ for page_link in manga_page_links:
 chapter_title = chapter_soup.find('title').text
 manga_pdf.output(chapter_title[:-11] + ".pdf", "F")
 
-#Next step: put on github
 #Next step2: add code to send to kindle
 #Next step3: how to run script every day on RPi?
 
