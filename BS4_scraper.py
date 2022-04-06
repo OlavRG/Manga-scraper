@@ -6,7 +6,7 @@ Created on Sun Jan 30 22:40:44 2022
 
 Sources:
     manga
-        http://77.73.67.227/mangas/5/one-piece
+        https://onepiecechapters.com/mangas/5/one-piece from translation group 'TCB scans'
     beautiful soup
         https://beautiful-soup-4.readthedocs.io/en/latest/index.html?highlight=find_all#searching-the-tree
     image to pdf
@@ -23,7 +23,7 @@ from io import BytesIO
 from math import ceil
 
 #Define the website
-website_url = 'http://77.73.67.227'
+website_url = 'https://onepiecechapters.com'
 manga_url_extension = '/mangas/5/one-piece'
 
 #Get html and parse it for url to chapter
@@ -69,6 +69,8 @@ for page_link in manga_page_links:
 chapter_title = chapter_soup.find('title').text
 manga_pdf.output(chapter_title[:-11] + ".pdf", "F")
 
+#Next step: Fix and add functions to test_emailer
 #Next step2: add code to send to kindle
-#Next step3: how to run script every day on RPi?
+#Next step3: add code to execute once a day 
+#Next step4: how to run script every day on RPi?
 
