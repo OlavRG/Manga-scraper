@@ -3,6 +3,13 @@
 Created on Tue Apr  5 21:47:20 2022
 
 @author: olavg
+
+Email might start failing after May30th when google stops allowing 3rd party apps
+Current protection for email:
+    two step authentication
+    application password (https://support.google.com/accounts/answer/185833?hl=en#zippy=)
+
+                          
 """
 
 import smtplib
@@ -11,7 +18,7 @@ import ssl
 SERVER_ADDRESS = 'smtp.gmail.com'
 SERVER_PORT = 587
 EMAIL_ADDRESS = 'autoolav0@gmail.com'
-EMAIL_PASSWORD = 'DvfAD95P!7PC'
+EMAIL_PASSWORD = 'hwpycfztjrvbjrpg' #'DvfAD95P!7PC'
 RECIPIENT_EMAIL = 'olavgrouwstra@gmail.com'
 
 context = ssl.create_default_context()
